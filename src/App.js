@@ -4,7 +4,7 @@ import RestaurantBillingApp from "./RestaurantBillingApp";
 
 const AppLayout = () => {
   return (
-    <div className="app">
+    <div>
       <RestaurantBillingApp />
     </div>
   );
