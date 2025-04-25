@@ -1,0 +1,201 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-bill, #printable-bill * {
+    visibility: visible;
+  }
+
+  #printable-bill {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bill-paper {
+    color: #333;
+    background-color: #fff;
+    width: 300px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+  .restaurant-name {
+    text-align: center;
+    color: #333;
+    margin: 0 0 8px;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .restaurant-address, .restaurant-phone {
+    text-align: center;
+    color: #666;
+    margin: 2px 0;
+    font-size: 10px;
+  }
+
+  .separator-line, .header-underline, .total-separator-line {
+    background-color: #ddd;
+    width: 100%;
+    height: 1px;
+    margin: 15px 0;
+  }
+
+  .separator-line {
+    height: 2px;
+    margin: 15px 0;
+  }
+
+  .bill-info {
+    margin: 15px 0;
+  }
+
+  .bill-info-row {
+    justify-content: space-between;
+    margin-bottom: 5px;
+    display: flex;
+  }
+
+  .bill-info-label, .bill-info-value {
+    color: #666;
+    font-size: 12px;
+  }
+
+  .order-header {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+  }
+
+  .qty-header, .item-header, .amount-header {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .qty-header {
+    width: 30px;
+  }
+
+  .item-header {
+    flex-grow: 1;
+  }
+
+  .amount-header {
+    text-align: right;
+    width: 80px;
+  }
+
+  .order-items {
+    margin: 10px 0 15px;
+  }
+
+  .order-row {
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .qty-value, .item-value, .amount-value {
+    color: #333;
+    font-size: 11px;
+  }
+
+  .qty-value {
+    width: 30px;
+  }
+
+  .item-value {
+    flex-grow: 1;
+  }
+
+  .amount-value {
+    text-align: right;
+    width: 80px;
+  }
+
+  .totals-section {
+    margin: 15px 0;
+  }
+
+  .total-row {
+    justify-content: space-between;
+    margin-bottom: 5px;
+    display: flex;
+  }
+
+  .total-label, .total-value {
+    color: #333;
+    font-size: 12px;
+  }
+
+  .total-label {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .total-row.final .total-label, .total-row.final .total-value {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .gratuity-section {
+    margin: 20px 0 15px;
+  }
+
+  .gratuity-header {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 11px;
+  }
+
+  .gratuity-options {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .gratuity-option {
+    color: #666;
+    font-size: 11px;
+  }
+
+  .thank-you {
+    text-align: center;
+    color: #333;
+    margin: 20px 0 10px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+  }
+
+  .decorative-wave {
+    height: 10px;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  .decorative-wave:after {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    clip-path: path("M0,0 C40,10 80,-10 120,0 C160,10 200,-10 240,0");
+    background-color: #4a90e2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @page {
+    size: 80mm 210mm;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=billingApp.545ebbc2.css.map */
