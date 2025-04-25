@@ -1,0 +1,224 @@
+/* bill-print.css - Only loads during printing */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-bill,
+  #printable-bill * {
+    visibility: visible;
+  }
+
+  #printable-bill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+
+  /* Paper styling */
+  .bill-paper {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  /* Restaurant header */
+  .restaurant-name {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+
+  .restaurant-address,
+  .restaurant-phone {
+    font-size: 10px;
+    text-align: center;
+    margin: 2px 0;
+    color: #666;
+  }
+
+  /* Separator lines */
+  .separator-line,
+  .header-underline,
+  .total-separator-line {
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .separator-line {
+    height: 2px;
+    margin: 15px 0;
+  }
+
+  /* Bill info section */
+  .bill-info {
+    margin: 15px 0;
+  }
+
+  .bill-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .bill-info-label,
+  .bill-info-value {
+    font-size: 12px;
+    color: #666;
+  }
+
+  /* Order header */
+  .order-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .qty-header,
+  .item-header,
+  .amount-header {
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+  }
+
+  .qty-header {
+    width: 30px;
+  }
+
+  .item-header {
+    flex-grow: 1;
+  }
+
+  .amount-header {
+    text-align: right;
+    width: 80px;
+  }
+
+  /* Order items */
+  .order-items {
+    margin: 10px 0 15px 0;
+  }
+
+  .order-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .qty-value,
+  .item-value,
+  .amount-value {
+    font-size: 11px;
+    color: #333;
+  }
+
+  .qty-value {
+    width: 30px;
+  }
+
+  .item-value {
+    flex-grow: 1;
+  }
+
+  .amount-value {
+    text-align: right;
+    width: 80px;
+  }
+
+  /* Totals section */
+  .totals-section {
+    margin: 15px 0;
+  }
+
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .total-label,
+  .total-value {
+    font-size: 12px;
+    color: #333;
+  }
+
+  .total-label {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .total-row.final .total-label,
+  .total-row.final .total-value {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* Gratuity section */
+  .gratuity-section {
+    margin: 20px 0 15px 0;
+  }
+
+  .gratuity-header {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .gratuity-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gratuity-option {
+    font-size: 11px;
+    color: #666;
+  }
+
+  /* Thank you message */
+  .thank-you {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #333;
+  }
+
+  /* Decorative wave */
+  .decorative-wave {
+    height: 10px;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .decorative-wave::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #4a90e2;
+    /* Create wave effect using clip-path */
+    clip-path: path("M0,0 C40,10 80,-10 120,0 C160,10 200,-10 240,0");
+  }
+
+  /* Set page size for receipt printing */
+  @page {
+    size: 80mm 210mm;
+    margin: 0;
+  }
+}

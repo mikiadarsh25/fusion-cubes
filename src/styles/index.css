@@ -1,0 +1,583 @@
+/* restaurant-billing.css */
+
+/* Base Styles */
+:root {
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-50: #eff6ff;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Layout */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.h-16 {
+  width: 4rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Colors */
+.bg-blue-500 {
+  background-color: var(--blue-500);
+}
+
+.bg-blue-600 {
+  background-color: var(--blue-600);
+}
+
+.bg-green-500 {
+  background-color: var(--green-500);
+}
+
+.bg-green-600 {
+  background-color: var(--green-600);
+}
+
+.bg-red-500 {
+  background-color: var(--red-500);
+}
+
+.bg-red-600 {
+  background-color: var(--red-600);
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--gray-200);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-blue-50 {
+  background-color: var(--blue-50);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-blue-500 {
+  color: var(--blue-500);
+}
+
+.text-blue-600 {
+  color: var(--blue-600);
+}
+
+.text-blue-700 {
+  color: var(--blue-700);
+}
+
+.text-gray-500 {
+  color: var(--gray-500);
+}
+
+.text-gray-600 {
+  color: var(--gray-600);
+}
+
+.text-gray-700 {
+  color: var(--gray-700);
+}
+
+.border {
+  border: 1px solid var(--gray-200);
+}
+
+.border-l {
+  border-left: 1px solid var(--gray-200);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.border-t {
+  border-top: 1px solid var(--gray-200);
+}
+
+.border-b-2 {
+  border-bottom: 2px solid var(--black);
+}
+
+.border-black {
+  border-color: var(--black);
+}
+
+/* Typography */
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Components */
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hover states */
+.hover\:bg-blue-600:hover {
+  background-color: var(--blue-600);
+}
+
+.hover\:bg-green-600:hover {
+  background-color: var(--green-600);
+}
+
+.hover\:bg-red-600:hover {
+  background-color: var(--red-600);
+}
+
+.hover\:bg-blue-50:hover {
+  background-color: var(--blue-50);
+}
+
+.hover\:text-blue-700:hover {
+  color: var(--blue-700);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+/* Media queries for responsive grid */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Print styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-bill,
+  #printable-bill * {
+    visibility: visible;
+  }
+
+  #printable-bill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+/* Bill print styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-bill,
+  #printable-bill * {
+    visibility: visible;
+  }
+
+  #printable-bill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+    font-size: 12pt;
+  }
+
+  /* Restaurant logo and name */
+  #printable-bill .flex.justify-center.mb-2 {
+    margin-bottom: 15px;
+  }
+
+  #printable-bill .bg-blue-600 {
+    background-color: #3b82f6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+
+  #printable-bill .text-2xl.font-bold {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #printable-bill p {
+    margin: 2px 0;
+    font-size: 10pt;
+  }
+
+  /* Bill borders */
+  #printable-bill .border-b-2.border-black {
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+  }
+
+  /* Bill info section */
+  #printable-bill .flex.justify-between.text-sm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 10pt;
+  }
+
+  #printable-bill strong {
+    font-weight: bold;
+  }
+
+  /* Bill table */
+  #printable-bill table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+  }
+
+  #printable-bill th {
+    border-bottom: 1px solid black;
+    padding: 6px 4px;
+    text-align: left;
+  }
+
+  #printable-bill td {
+    padding: 6px 4px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #printable-bill .text-center {
+    text-align: center;
+  }
+
+  #printable-bill .text-right {
+    text-align: right;
+  }
+
+  /* Bill totals */
+  #printable-bill .flex.justify-between.mb-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  #printable-bill .flex.justify-between.font-bold.text-lg {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14pt;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+
+  /* Thank you message */
+  #printable-bill .mt-8.text-center {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #printable-bill .font-bold {
+    font-weight: bold;
+  }
+
+  #printable-bill .text-xs {
+    font-size: 9pt;
+    margin-top: 15px;
+  }
+}

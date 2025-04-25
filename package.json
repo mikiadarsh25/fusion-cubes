@@ -1,0 +1,29 @@
+{
+  "homepage": "https://mikiadarsh25.github.io/fusion-cubes",
+  "name": "billingapp",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d",
+    "build": "npx parcel build index.html",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "Adarsh Prakash",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lucide-react": "^0.503.0",
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.5.3",
+    "process": "^0.11.10"
+  }
+}
