@@ -3,11 +3,7 @@ import ReactDOM from "react-dom/client";
 import RestaurantBillingApp from "./RestaurantBillingApp";
 
 const AppLayout = () => {
-  return (
-    <div>
-      <RestaurantBillingApp />
-    </div>
-  );
+  return <RestaurantBillingApp />
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
