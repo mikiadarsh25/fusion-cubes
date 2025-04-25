@@ -2,14 +2,14 @@
   "homepage": "https://mikiadarsh25.github.io/fusion-cubes",
   "name": "billingapp",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "npx parcel build index.html",
-    "format": "npx prettier --write ."
-  },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "npx parcel index.html",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "build": "npx parcel build index.html --public-url ./",
+  "format": "npx prettier --write ."
+},
   "keywords": [],
   "author": "Adarsh Prakash",
   "license": "ISC",
