@@ -227,7 +227,7 @@ const RestaurantBillingApp = () => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Fusion Bites - Bill</title>
+          <title>The Fusion Cubes - Bill</title>
           <style>
             /* General Styles */
             body {
@@ -548,7 +548,7 @@ const RestaurantBillingApp = () => {
     link.setAttribute("href", encodedUri);
     link.setAttribute(
       "download",
-      `Fusion_Bites_Summary_${new Date()
+      `The_Fusion_Cubes_Summary_${new Date()
         .toLocaleDateString()
         .replace(/\//g, "-")}.csv`
     );
